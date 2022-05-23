@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: intrusion-detection-service
+  profiles:
+    active: default
+    
+    
+jobs:
+  fixedDelay:
+    hourly: 3600000
+    tenMinutes: 600000
+    oneMinute: 60000
+    
+security:
+  salt: zbZyAVd1LXJclcCGAcKbRA==
+  IV: NyNTFGvIgGKFJQwCLSoDtg==
